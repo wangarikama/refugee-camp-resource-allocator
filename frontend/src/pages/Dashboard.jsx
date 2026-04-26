@@ -33,7 +33,7 @@ export default function Dashboard() {
 
   // Fetch data
   const fetchData = () => {
-    axios.get(`http://localhost:5000/api/analysis/${selectedCamp}`)
+    axios.get(`https://refugee-camp-resource-allocator.onrender.com/api/analysis/${selectedCamp}`)
       .then((response) => {
         setCampData(response.data);
         setLoading(false);
@@ -62,7 +62,7 @@ export default function Dashboard() {
   // Restored function to handle population updates
   const handlePopUpdate = async () => {
     try {
-      await axios.put(`http://localhost:5000/api/population/${selectedCamp}`, {
+      await axios.put(`https://refugee-camp-resource-allocator.onrender.com/api/population/${selectedCamp}`, {
         total_refugees: Number(newPopValue)
       });
       setIsEditingPop(false);

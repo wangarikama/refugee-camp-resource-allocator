@@ -9,7 +9,7 @@ export default function LogisticsDashboard({ filteredItems, refreshData }) {
   // Function to handle saving the new data to the database
   const handleSave = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/resources/${id}`, {
+      await axios.put(`https://refugee-camp-resource-allocator.onrender.com/api/resources/${id}`, {
         quantity_in_stock: Number(newStockValue)
       });
       setEditingId(null); // Close the edit mode

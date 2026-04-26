@@ -19,7 +19,7 @@ const pool = mysql.createPool({
   ssl: {
     rejectUnauthorized: false
   }
-  // ----------------------------
+  // 
 });
 
 // Verify connectivity on startup
