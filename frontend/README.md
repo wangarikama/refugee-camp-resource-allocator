@@ -1,4 +1,5 @@
-Refugee Camp Resource Allocator
+REFUGEE CAMP RESOURCE ALLOCATOR
+
 A centralized, real-time resource management system designed to optimize the distribution of aid in refugee camps. This project focuses on four key sectors: Food, Shelter, Health, and Education, utilizing a real-time gap analysis engine to ensure equitable allocation.
 
 Live Demo
